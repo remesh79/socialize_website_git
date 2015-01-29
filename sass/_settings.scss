@@ -1,0 +1,74 @@
+/* Settings */
+
+//Variables
+$color_black: #000;
+$color_red: #f00;
+$color_white:#fff;
+$color_pink:#ee3696;
+$color_orange:#f6941e;
+$color_menu_text:#727275;
+
+//Susy
+@import "susy";
+
+$total-columns  : 7;
+$column-width   : 4.25em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+$break: 12;
+
+$susy: (
+        flow: ltr, // ltr | rtl
+        output: float, // float | isolate
+        math: fluid, // fluid | static (requires column-width)
+        column-width: $column-width, // false | value
+        container: auto, // length or % | auto
+        container-position: center, // left | center | right | <length> [*2] (grid padding)
+        last-flow: to,
+        columns: $total-columns,
+        gutters: 1,
+        gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
+        global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
+
+);
+
+//Basic styles
+.black_bg{
+  background:$color_black;
+}
+.transparent {
+  opacity: .6;
+}
+
+.RED{  color: $color_red;}
+.WHITE{  color: $color_white;}
+
+.trace{
+  border:1px solid RED;
+}
+.nopadding{
+  margin: 0; padding: 0;
+}
+
+//Default Elements
+a {
+  text-decoration: none;
+
+
+}
+
+//Mixins
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+  background: {
+    image: url($imgpath);
+    position: $position;
+    repeat: $repeat;
+  }
+}
+
+@mixin hide-text{
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+

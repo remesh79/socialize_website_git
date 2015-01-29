@@ -1,0 +1,117 @@
+/* Custom Styles */
+@import 'compass/css3';
+@import 'settings';
+@import 'menu';
+@import 'grids';
+
+body {
+  @extend .nopadding;
+  @include container(100%);
+  height: 100%;
+  min-height: 1020px;
+
+}
+
+.site-masthead {
+  height: 70px;
+}
+
+header {
+  @extend .black_bg;
+  nav {
+    @extend .nav;
+    @include span(100%);
+    & .menu {
+    }
+
+  }
+}
+
+//Homepage
+#page {
+  @include container;
+  header {
+    @include full;
+
+    h1 {
+      @include full($total-columns);
+    }
+  }
+  #content {
+    @include columns(9);
+    @include omega;
+    #main {
+      @include columns(3);
+    }
+    aside {
+      @include columns(6);
+      @include omega(9);
+    }
+  }
+}
+
+.home_about {
+  @include columns(1);
+  @include background('../images/Home_bg_top.jpg');
+  background-position: center;
+  min-height: convert-to-rem(800px);
+  text-align: center;
+  .about-pic {
+
+    padding-top: convert-to-rem(200px);
+    //@extend .trace;
+
+  }
+}
+
+.home_services {
+  @include columns(1);
+  @include background('../images/homepage_bg_services.jpg');
+  min-height: convert-to-rem(500px);
+  .home_services_content {
+    height: convert-to-rem(500px);
+  }
+  .home_case_studies {
+    @include columns(1);
+    background-color: $color_orange;
+    @include background('../images/homepage_casestuy_bg.jpg');
+    background-position: center right;
+    height: convert-to-rem(475px);
+  }
+  .home_clients {
+    @include columns(1);
+    @include background('../images/homepage_bg_services.jpg');
+    height: convert-to-rem(550px);
+    //@extend .trace;
+  }
+}
+
+.home_team {
+  @include columns(1);
+  background-color: $color_orange;
+  @include background('../images/homepage_team_bg.jpg');
+  background-position: center right;
+  height: convert-to-rem(475px);
+}
+
+footer {
+  @include columns(1);
+  background-color: $color_black;
+  .footer_info {
+    width: convert-to-rem(900px);
+    height: convert-to-rem(250px);
+    @include background('../images/footer_bg.png');
+    display: block;
+    background-position: bottom right;
+    margin: 0 auto;
+  }
+
+}
+
+
+
+
+
+
+
+
