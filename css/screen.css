@@ -205,19 +205,19 @@ body:after {
   clear: both;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 .site-masthead {
   height: 70px;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 header nav {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 #page {
   max-width: 100%;
   margin-left: auto;
@@ -229,7 +229,7 @@ header nav {
   display: block;
   clear: both;
 }
-/* line 33, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 #page header {
   clear: both;
   width: 100%;
@@ -237,7 +237,7 @@ header nav {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 36, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 #page header h1 {
   clear: both;
   width: 100%;
@@ -245,7 +245,7 @@ header nav {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 40, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 #page #content {
   -moz-columns: 9;
   -webkit-columns: 9;
@@ -253,13 +253,13 @@ header nav {
   float: right;
   margin-right: 0;
 }
-/* line 43, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 #page #content #main {
   -moz-columns: 3;
   -webkit-columns: 3;
   columns: 3;
 }
-/* line 46, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 #page #content aside {
   -moz-columns: 6;
   -webkit-columns: 6;
@@ -268,7 +268,7 @@ header nav {
   margin-right: 0;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .home_about {
   -moz-columns: 1;
   -webkit-columns: 1;
@@ -280,12 +280,12 @@ header nav {
   min-height: 50rem;
   text-align: center;
 }
-/* line 59, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .home_about .about-pic {
   padding-top: 12.5rem;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .home_services {
   -moz-columns: 1;
   -webkit-columns: 1;
@@ -295,11 +295,11 @@ header nav {
   background-repeat: no-repeat;
   min-height: 31.25rem;
 }
-/* line 71, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .home_services .home_services_content {
   height: 31.25rem;
 }
-/* line 74, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .home_services .home_case_studies {
   -moz-columns: 1;
   -webkit-columns: 1;
@@ -311,7 +311,7 @@ header nav {
   background-position: center right;
   height: 29.6875rem;
 }
-/* line 81, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .home_services .home_clients {
   -moz-columns: 1;
   -webkit-columns: 1;
@@ -322,7 +322,7 @@ header nav {
   height: 34.375rem;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .home_team {
   -moz-columns: 1;
   -webkit-columns: 1;
@@ -335,14 +335,14 @@ header nav {
   height: 29.6875rem;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 footer {
   -moz-columns: 1;
   -webkit-columns: 1;
   columns: 1;
   background-color: #000;
 }
-/* line 100, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 footer .footer_info {
   width: 56.25rem;
   height: 15.625rem;
