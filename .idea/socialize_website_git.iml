@@ -4,12 +4,6 @@
     <option name="compassConfigPath" value="$MODULE_DIR$/config.rb" />
     <option name="compassExecutableFilePath" value="$USER_HOME$/.rbenv/shims/compass" />
     <option name="compassSupportEnabled" value="true" />
-    <option name="importPaths">
-      <list>
-        <option value="$USER_HOME$/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass" />
-        <option value="$USER_HOME$/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets" />
-      </list>
-    </option>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
@@ -19,4 +13,3 @@
     <orderEntry type="library" name="compass-library" level="project" />
   </component>
 </module>
-
