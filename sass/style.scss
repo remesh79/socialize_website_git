@@ -1,0 +1,267 @@
+// Screen
+// ======
+
+
+@import "settings";
+@import 'fonts';
+
+body{
+  font-family:'Lato';
+  font-size: 16px;
+}
+p{
+  line-height: 1.6;
+  margin-bottom: rem-calc(20);
+}
+figcaption{
+  color: #fff;
+  font-weight:700;
+}
+figure{
+  margin: rem-calc(10) ;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  li{
+    list-style: none;
+  }
+}
+.home{
+
+}
+
+.pages{
+  background: $color-orange;
+}
+
+.side__color{
+  background: red;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+h1{
+  font-family: "Pacifico";
+  font-size: rem-calc(42);
+  margin: 0 0 rem-calc(25);
+  color: #fff;
+  line-height: 1;
+}
+header{
+  p{
+    font-weight: 700;
+    color: #fff;
+  }
+}
+.btn{
+  border: 2px solid #FFF;
+  background: none transparent;
+  font-weight: 700;
+  font-size: rem-calc(15);
+  padding: rem-calc(10) rem-calc(30);
+  display: inline-block;
+  text-transform: uppercase;
+}
+.container {
+  @include container($susy);
+  padding: gutter() gutter();
+
+  // Tablet View
+  @include susy-breakpoint($tablet) {
+    @include container(10);
+
+  }
+
+  // Desktop View
+  @include susy-breakpoint($desktop) {
+    @include container(16);
+
+  }
+
+}
+
+#header{
+  background: #000;
+  height: $header-height;
+  position: relative;
+
+  .container{
+    padding: 0;
+  }
+
+  .header-nav-button{
+    width: rem-calc(58);
+    position: relative;
+    top: 50%;
+    text-align: right;
+    margin: 0 auto ;
+    cursor: pointer;
+    @include translateY(-50%);
+    span{
+      position: relative;
+      display: block;
+      width: rem-calc(58);
+      height: rem-calc(5);
+      background: #fff;
+      top: 0;
+      margin-bottom:  10px;
+      &.dot{
+        width: 58px - 10px;
+        margin-left: 10px ;
+        &:before{
+          content: "";
+          position: absolute;
+          left: -10px;
+          width: 5px;
+          height: 5px;
+          border-radius: 5px;
+          background: #fff;
+        }
+      }
+    }
+  }
+  .logo {
+    &.mobile {
+      @include span(3 of 6);
+      line-height: $header-height;
+      img{
+        width: 150px;
+        vertical-align: middle;
+      }
+      position: absolute;
+      left: 10px;
+
+    }
+  }
+  .header-nav{
+    height: $header-height;
+    position: absolute;
+    right: 0px;
+    width: $header-height;
+    ul{
+      @include translate(100%, 0);
+      display: none;
+    }
+    border-left: 1px solid #252525;
+    
+  }
+
+  @include susy-breakpoint($desktop) {
+
+    .logo{
+      &.mobile{
+        display: none;
+      }
+    }
+    .header-nav-button{
+      display: none;
+    }
+    .header-nav{
+      @include span(6);
+      border: none;
+      position: relative;
+      margin-right: 0;
+      ul{
+        padding: 0;
+        margin: 0;
+        display: block;
+        @include translate(0,0);
+        text-align: center;
+        li{
+          display: inline-block;
+          @include span(1 of 9);
+          &:last-child{
+            @include span(1 of 9 last);
+          }
+          a{
+            line-height: $header-height;
+          }
+        }
+      }
+    }
+  }
+  @include clearfix;
+}
+
+.pages{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: inherit;
+  text-align: center;
+  @include susy-breakpoint($desktop) {
+    .container{
+      //padding: rem-calc(30);
+    }
+  }
+
+  &#home{
+    background-image: url("../images/home-about.jpg");
+  }
+  &#services{
+    background-image: url("../images/home-services.jpg");
+    background-position: 0 0;
+  }
+  &#clients{
+    background-image: url("../images/home-services.jpg");
+  }
+}
+
+/*services*/
+.list{
+  margin: gutter() 0 ;
+  a{
+    font-weight: 700;
+  }
+  &.home-services-list{
+    li{
+      @include span(2);
+      &:last-child{
+        @include span(2 of 6 last);
+      }
+    }
+  }
+
+  &.home-clients-list{
+    li{
+      @include span(2);
+      &:nth-child(3n){
+        @include span(2 of 6 last);
+      }
+    }
+  }
+
+  @include susy-breakpoint($desktop) {
+    &.home-clients-list{
+      li{
+        @include span(1);
+        &:nth-child(5n){
+          @include span(1 of 6 last);
+        }
+        &:nth-child(3n){
+          @include span(1 of 6);
+        }
+      }
+    }
+  }
+
+  li{
+
+    position: relative;
+
+    img{
+      max-width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include translate(-50%,-50%);
+    }
+    .image{
+      min-height: 150px;
+      position: relative;
+    }
+  }
+  @include clearfix;
+}
