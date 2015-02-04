@@ -215,18 +215,20 @@ header{
   a{
     font-weight: 700;
   }
-  &.home-services-list{
+  &.services-list{
     li{
       @include span(2);
+      padding:  gutter();
       &:last-child{
         @include span(2 of 6 last);
       }
     }
   }
 
-  &.home-clients-list{
+  &.clients-list{
     li{
       @include span(2);
+      padding:  gutter();
       &:nth-child(3n){
         @include span(2 of 6 last);
       }
