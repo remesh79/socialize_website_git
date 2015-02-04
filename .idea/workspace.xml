@@ -2,64 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ffed5de-ef4c-4d6d-ad75-78e3dc77023f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/clients/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/clients/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/clients/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/clients/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/clients/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/clients/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Black.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Black.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Black.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BlackItalic.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BlackItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BlackItalic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BlackItalic.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BoldItalic.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BoldItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BoldItalic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BoldItalic.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Italic.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Italic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Italic.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Regular.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Pacifico-Regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Pacifico-Regular.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Pacifico-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Pacifico-Regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-about.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-casestuy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-services.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-the-team.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/services-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/services-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/services-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Black.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BlackItalic.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Bold.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-BoldItalic.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Italic.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Lato-Regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Pacifico-Regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_fonts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_normalize.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clients.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.11.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/svg/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/modernizr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="socialize_website_git.iws" />
@@ -159,6 +101,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="socialize_website_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socialize_website_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socialize_website_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,7 +236,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423054427127</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="First Update">
+      <created>1423054514522</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1423054514522</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -308,14 +270,14 @@
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -372,6 +334,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4095">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
