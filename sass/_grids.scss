@@ -1,9 +1,13 @@
 // Requirements
 // ============
 
-@import "susy";
+
 
 $susy: (
-  columns: 12,
-  gutters: 1/4,
+        //math: static,
+        columns: 6,
+        column-width: 60px,
+        gutters: 1 / 6,
+        global-box-sizing: border-box,
+        use-custom: (rem: true)
 );

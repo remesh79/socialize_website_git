@@ -1,39 +1,167 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <script src="js/modernizr.js"></script>
     <meta charset="UTF-8">
-    <title>Test 2 11</title>
-    <link href="css/screen.css" type="text/css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title></title>
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
-<body class="black_bg">
-<header class="site-masthead" role="banner">
-    <nav class="navigation" role="navigation" aria-label="main navigation">
-        <ul class="menu">
-            <li><a href="#" class="active">About</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Services</a></li>
-            <li class="logo">Socialize</li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-
-        </ul>
-    </nav>
+<body class="home">
+<header id="header" role="banner">
+    <div class="container">
+        <div class="logo mobile"><img src="images/svg/logo.svg" alt=""/></div>
+        <nav class="header-nav">
+            <div class="header-nav-button">
+                <span class="line"></span>
+                <span class="line dot"></span>
+                <span class="line dot"></span>
+            </div>
+            <ul id="header-menu" class="header-menu">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CLIENTS</a></li>
+                <li><a href="#">CASE STUDIES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li class="logo"><img src="images/svg/logo.svg" alt=""/><a href="#"></a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
-<div class="home_about">
-    <div class="about-pic"><img src="images/Speech_Bubble.png"/></div>
-</div>
-<div class="home_services">
-    <div class="home_services_content"></div>
-    <div class="home_case_studies"></div>
-    <div class="home_clients"></div>
-</div>
-<div class="home_team"></div>
-<footer>
-    <div class="footer_info"></div>
+<main id="content" role="main">
+    <div class="pages" id="home">
+        <div class="container">
+            <header>
+                <h1>Home</h1>
 
-</footer>
+                <p>We are a digital communications agency that bridges the gap between shifting technology &
+                    cutting-edge creative ideas.</p>
+            </header>
+            <section>
+
+            </section>
+            <a class="btn" href="#">About Socialize</a>
+        </div>
+    </div>
+    <!-- #home -->
+    <div class="pages" id="services">
+        <div class="container">
+            <header>
+                <h1>Services</h1>
+
+                <p>We bring much more than any other independent agency in our diverse range of services</p>
+            </header>
+            <section>
+                <ul class="list home-services-list">
+                    <li>
+                        <div class="image">
+                            <img src="images/services-1.png" alt=""/>
+                        </div>
+                        <a>Responsive Websites</a>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/services-2.png" alt=""/>
+                        </div>
+                        <a>Web Apps & Games</a>
+
+                    </li>
+                    <li>
+                        <div class="image">>
+                            <img src="images/services-3.png" alt=""/>
+                        </div>
+                        <a>Video Production</a>
+
+                    </li>
+
+
+                </ul>
+            </section>
+            <a class="btn" href="#">VIEW SERVICES</a>
+        </div>
+    </div>
+    <!-- #services -->
+    <div class="pages" id="case_studies">
+        <div class="container">
+            <header>
+                <h1>Case Studies</h1>
+
+                <p>We bring much more than any other independent agency in our diverse range of services</p>
+            </header>
+            <a class="btn" href="#">VIEW our work</a>
+        </div>
+    </div>
+    <!-- #case_studies -->
+    <div class="pages" id="clients">
+        <div class="container">
+            <header>
+                <h1>Clients</h1>
+
+                <p>Our exceptional track record has given us an an enviable list of clients</p>
+            </header>
+            <section>
+                <ul class="list home-clients-list">
+                    <li>
+                        <div class="image"><img src="images/clients/1.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/2.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/3.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/4.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/5.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/6.png" alt=""/></div>
+                    </li>
+
+                    <li>
+                        <div class="image"><img src="images/clients/1.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/2.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/3.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/4.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/5.png" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="images/clients/6.png" alt=""/></div>
+                    </li>
+                </ul>
+            </section>
+            <a class="btn" href="#">VIEW all work</a>
+        </div>
+    </div>
+    <!-- #clients -->
+    <div class="pages" id="the_team">
+        <div class="container">
+            <header>
+                <h1>The Team</h1>
+
+                <p>We’ve got a diverse and unique team passionate about their craft at Socialize</p>
+            </header>
+            <a class="btn" href="#">MEET EVERYONE</a>
+        </div>
+    </div>
+    <!-- the_team eof -->
+</main>
+<!-- #content eof-->
+<footer role="contentinfo"></footer>
 </body>
 </html>
