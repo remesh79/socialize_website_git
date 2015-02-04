@@ -87,8 +87,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 td, th { padding: 0; }
 
-*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
 /*
 @function data($attr) { @if $namespace { @return '[data-' + $namespace + '-' + $attr + ']'; }
  @return '[data-' + $attr + ']';
@@ -169,3 +167,5 @@ header p { font-weight: 700; color: #fff; }
 .list li { position: relative; }
 .list li img { max-width: 100%; position: absolute; left: 50%; top: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .list li .image { min-height: 150px; position: relative; }
+
+.test { background: red; }
