@@ -1,0 +1,29 @@
+{
+  "items" : [
+    {
+      "img": "assets/1.jpg",
+      "alt" : " Image 1"
+    },
+    {
+      "img": "assets/2.jpg",
+      "alt" : " Image 2"
+    },
+    {
+      "img": "assets/3.jpg",
+      "alt" : " Image 1"
+    },
+    {
+      "img": "assets/4.jpg",
+      "alt" : " Image 2"
+    },
+    {
+      "img": "assets/5.jpg",
+      "alt" : " Image 1"
+    },
+    {
+      "img": "assets/6.jpg",
+      "alt" : " Image 2"
+    }
+  ]
+}
+

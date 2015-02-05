@@ -116,16 +116,18 @@ header{
   }
   //right section of 2 block sections
   .slider-content{
+/*
     padding: gutter();
-
+*/
     @include susy-breakpoint($desktop) {
       text-align: left;
-      width: span(9 of 16);
+      width: span(9 wide of 16);
       float: left;
-      .ctn{
+      background: red;
+      /*.ctn{
         @include span(5 of 9 last);
         float: left;
-      }
+      }*/
     }
 
   }
@@ -252,6 +254,13 @@ header{
 
   &#home{
     background-image: url("../images/home-about.jpg");
+    @include susy-breakpoint($desktop){
+      .container{
+        @include vertical-align;
+        left: 50%;
+        @include translate(-50%,-50%);
+      }
+    }
   }
   &#services{
     background-image: url("../images/home-services.jpg");
@@ -318,4 +327,5 @@ body{
   }
 }
 
+@import "sliders";
 @import "carriers";

@@ -141,9 +141,10 @@ header p { font-weight: 700; color: #fff; }
 .pages .side { background: #f7941e; padding: 4.34783%; }
 @media (min-width: 900px) { .pages .side { text-align: right !important; width: 42.85714%; float: left; }
   .pages .side .ctn { width: 55.55556%; float: right; margin-right: 0; float: right; } }
-.pages .slider-content { padding: 4.34783%; }
-@media (min-width: 900px) { .pages .slider-content { text-align: left; width: 55.55556%; float: left; }
-  .pages .slider-content .ctn { width: 54.28571%; float: right; margin-right: 0; float: left; } }
+.pages .slider-content { /* padding: gutter();
+*/ }
+@media (min-width: 900px) { .pages .slider-content { text-align: left; width: 57.14286%; float: left; background: red; /*.ctn{ @include span(5 of 9 last); float: left;
+}*/ } }
 
 #content { -moz-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94); -o-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94); transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
@@ -167,6 +168,7 @@ header p { font-weight: 700; color: #fff; }
 
 .pages { background-size: cover; background-repeat: no-repeat; background-position: center; min-height: inherit; text-align: center; }
 .pages#home { background-image: url("../images/home-about.jpg"); }
+@media (min-width: 900px) { .pages#home .container { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } }
 .pages#services { background-image: url("../images/home-services.jpg"); background-position: 0 0; }
 .pages#clients { background-image: url("../images/home-services.jpg"); }
 
@@ -196,6 +198,8 @@ header p { font-weight: 700; color: #fff; }
 .home-svg-title { max-width: 600px; margin: 0 auto; }
 
 body.nav-open #content { -moz-transform: translate3d(-70%, 0, 0); -webkit-transform: translate3d(-70%, 0, 0); transform: translate3d(-70%, 0, 0); }
+
+#case_studies_slider .item { background: #a1def8; padding: 30px 0px; display: block; margin: 5px; color: #FFF; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; text-align: center; }
 
 .list.careers li { width: 31.91489%; float: left; }
 .list.careers li:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
