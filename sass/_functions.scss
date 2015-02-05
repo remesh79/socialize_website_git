@@ -150,3 +150,20 @@ $modules: () !default;
   @return rem-calc($values);
 }
 
+@mixin vertical-align {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  @include transform(translateY(-50%));
+}
+
+@mixin vertical-align-none {
+  position: relative;
+  top: auto;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  @include transform(translateY(0%));
+}
+
+

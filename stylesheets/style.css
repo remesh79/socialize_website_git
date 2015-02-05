@@ -117,11 +117,13 @@ figure { margin: 0.625rem; }
 ul { padding: 0; margin: 0; }
 ul li { list-style: none; }
 
+h1 { font-family: "Pacifico"; font-size: 2.625rem; margin: 0 0 1.5625rem; line-height: 1; color: #f7941e; text-align: center; }
+
+.home h1 { color: #fff; }
+
 .side__color { background: red; }
 
 a { text-decoration: none; color: #fff; }
-
-h1 { font-family: "Pacifico"; font-size: 2.625rem; margin: 0 0 1.5625rem; color: #fff; line-height: 1; }
 
 header p { font-weight: 700; color: #fff; }
 
@@ -131,9 +133,10 @@ header p { font-weight: 700; color: #fff; }
 .container:after { content: " "; display: block; clear: both; }
 @media (min-width: 600px) { .container { max-width: 48.75rem; margin-left: auto; margin-right: auto; }
   .container:after { content: " "; display: block; clear: both; } }
-@media (min-width: 900px) { .container { max-width: 78.75rem; margin-left: auto; margin-right: auto; padding-left: 0; padding-left: 0; }
+@media (min-width: 900px) { .container { max-width: 78.75rem; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
   .container:after { content: " "; display: block; clear: both; } }
 
+/* section blocks*/
 .pages { overflow: hidden; *zoom: 1; }
 .pages .side { background: #f7941e; padding: 4.34783%; }
 @media (min-width: 900px) { .pages .side { text-align: right !important; width: 42.85714%; float: left; }
@@ -167,13 +170,15 @@ header p { font-weight: 700; color: #fff; }
 .pages#services { background-image: url("../images/home-services.jpg"); background-position: 0 0; }
 .pages#clients { background-image: url("../images/home-services.jpg"); }
 
-/*services*/
+/*list*/
 .list { overflow: hidden; *zoom: 1; padding: 4.34783% 0; }
+.list .image { position: relative; min-height: 120px; }
+.list .image img { max-width: 100%; top: 50%; left: 50%; position: absolute; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .list li { width: 30.43478%; float: left; padding: 10px; }
 .list li:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
 .list li:nth-child(3n + 2) { margin-left: 34.78261%; margin-right: -100%; clear: none; }
 .list li:nth-child(3n + 3) { margin-left: 69.56522%; margin-right: -100%; clear: none; }
-.list li:nth-child(n+4) { display: none; }
+.list li:nth-child(n+7) { display: none; }
 @media (min-width: 900px) { .list li { width: 14.89362%; float: left; }
   .list li:nth-child(6n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .list li:nth-child(6n + 2) { margin-left: 17.02128%; margin-right: -100%; clear: none; }
@@ -182,8 +187,20 @@ header p { font-weight: 700; color: #fff; }
   .list li:nth-child(6n + 5) { margin-left: 68.08511%; margin-right: -100%; clear: none; }
   .list li:nth-child(6n + 6) { margin-left: 85.10638%; margin-right: -100%; clear: none; }
   .list li:nth-child(n+4) { display: block; } }
+.list.services-list li { width: 31.91489%; float: left; }
+.list.services-list li:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+.list.services-list li:nth-child(3n + 2) { margin-left: 34.04255%; margin-right: -100%; clear: none; }
+.list.services-list li:nth-child(3n + 3) { margin-left: 68.08511%; margin-right: -100%; clear: none; }
 
 /* home svg icon*/
 .home-svg-title { max-width: 600px; margin: 0 auto; }
 
 body.nav-open #content { -moz-transform: translate3d(-70%, 0, 0); -webkit-transform: translate3d(-70%, 0, 0); transform: translate3d(-70%, 0, 0); }
+
+.list.careers li { width: 31.91489%; float: left; }
+.list.careers li:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+.list.careers li:nth-child(3n + 2) { margin-left: 34.04255%; margin-right: -100%; clear: none; }
+.list.careers li:nth-child(3n + 3) { margin-left: 68.08511%; margin-right: -100%; clear: none; }
+
+@media (min-width: 900px) { #social_life aside { width: 30.15873%; float: left; margin-right: 1.5873%; }
+  #social_life .right-content { width: 68.25397%; float: right; margin-right: 0; } }

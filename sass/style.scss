@@ -37,8 +37,19 @@ ul{
     list-style: none;
   }
 }
-.home{
+h1{
+  font-family: "Pacifico";
+  font-size: rem-calc(42);
+  margin: 0 0 rem-calc(25);
+  line-height: 1;
+  color: $color-orange;
+  text-align: center;
+}
 
+.home{
+  h1{
+    color: #fff;
+  }
 }
 
 
@@ -50,13 +61,7 @@ a{
   text-decoration: none;
   color: #fff;
 }
-h1{
-  font-family: "Pacifico";
-  font-size: rem-calc(42);
-  margin: 0 0 rem-calc(25);
-  color: #fff;
-  line-height: 1;
-}
+
 header{
   p{
     font-weight: 700;
@@ -91,8 +96,10 @@ header{
   }
 
 }
-
+/* section blocks*/
 .pages{
+
+  //left section of 2 block sections
   .side{
     background: $color-orange;
     padding: gutter();
@@ -107,7 +114,7 @@ header{
     }
 
   }
-
+  //right section of 2 block sections
   .slider-content{
     padding: gutter();
 
@@ -255,13 +262,26 @@ header{
   }
 }
 
-/*services*/
+/*list*/
 .list{
   @include clearfix;
   padding:  gutters() 0 ;
+
+  .image{
+    position: relative;
+    img{
+      max-width: 100%;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      @include translate(-50%,-50%);
+    }
+    min-height: 120px;
+  }
+
   li{
     @include gallery(2 of 6);
-    &:nth-child(n+4){
+    &:nth-child(n+7){
       display: none;
     }
     padding: 10px;
@@ -272,6 +292,12 @@ header{
       &:nth-child(n+4){
         display: block;
       }
+    }
+  }
+
+  &.services-list{
+    li{
+      @include gallery(4 of 12);
     }
   }
 }
@@ -291,3 +317,5 @@ body{
       }
   }
 }
+
+@import "carriers";
