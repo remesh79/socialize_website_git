@@ -5,7 +5,7 @@
 @import "settings";
 @import 'fonts';
 html{
-  font-size: 75%;
+  font-size: 85%;
   /*@include susy-breakpoint($tablet) {
 
   }
@@ -41,9 +41,7 @@ ul{
 
 }
 
-.pages{
-  background: $color-orange;
-}
+
 
 .side__color{
   background: red;
@@ -87,10 +85,46 @@ header{
   // Desktop View
   @include susy-breakpoint($desktop) {
     @include container(16);
+    padding-left: 0;
+    padding-right: 0;
 
   }
 
 }
+
+.pages{
+  .side{
+    background: $color-orange;
+    padding: gutter();
+    @include susy-breakpoint($desktop) {
+      text-align: right !important;
+      width: span(7 of 16);
+      float: left;
+      .ctn{
+        @include span(4 of 7 last);
+        float: right;
+      }
+    }
+
+  }
+
+  .slider-content{
+    padding: gutter();
+
+    @include susy-breakpoint($desktop) {
+      text-align: left;
+      width: span(9 of 16);
+      float: left;
+      .ctn{
+        @include span(5 of 9 last);
+        float: left;
+      }
+    }
+
+  }
+  @include clearfix;
+}
+
 #content{
   @include transition(all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940))
 }
@@ -223,68 +257,23 @@ header{
 
 /*services*/
 .list{
-  margin: gutter() 0 ;
-  a{
-    font-weight: 700;
-  }
-  &.services-list{
-    li{
-      @include span(2);
-      padding:  gutter();
-      &:last-child{
-        @include span(2 of 6 last);
-      }
-    }
-  }
-
-  &.clients-list{
-    li{
-      @include span(2);
-      padding:  gutter();
-      &:nth-child(3n){
-        @include span(2 of 6 last);
-      }
-      // hide rest for mobile
-      &:nth-child(n+4){
-        display: none;
-      }
-      .image{
-        min-height: rem-calc(50);
-      }
-    }
-  }
-
-  @include susy-breakpoint($desktop) {
-    &.home-clients-list{
-      li{
-        @include span(1);
-        &:nth-child(5n){
-          @include span(1 of 6 last);
-        }
-        &:nth-child(3n){
-          @include span(1 of 6);
-        }
-      }
-    }
-  }
-
-  li{
-
-    position: relative;
-
-    img{
-      max-width: 100%;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      @include translate(-50%,-50%);
-    }
-    .image{
-      min-height: rem-calc(150);
-      position: relative;
-    }
-  }
   @include clearfix;
+  padding:  gutters() 0 ;
+  li{
+    @include gallery(2 of 6);
+    &:nth-child(n+4){
+      display: none;
+    }
+    padding: 10px;
+  }
+  @include susy-breakpoint($desktop){
+    li{
+      @include gallery(2 of 12);
+      &:nth-child(n+4){
+        display: block;
+      }
+    }
+  }
 }
 
 /* home svg icon*/
