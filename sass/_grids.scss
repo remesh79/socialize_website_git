@@ -6,8 +6,8 @@
 $susy: (
         //math: static,
         columns: 6,
-        column-width: 60px,
-        gutters: 3 / 6,
+        column-width: rem-calc(60),
+        gutters: 2 / 6,
         global-box-sizing: border-box,
         use-custom: (rem: true)
 );
