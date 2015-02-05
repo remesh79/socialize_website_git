@@ -1,0 +1,19 @@
+.list{
+
+  &.careers{
+    li{
+      @include gallery(4 of 12);
+    }
+  }
+}
+
+#social_life{
+  @include susy-breakpoint($desktop){
+    aside{
+      @include  span(5 of 16 first);
+    }
+    .right-content{
+      @include  span(11 of 16 last);
+    }
+  }
+}
