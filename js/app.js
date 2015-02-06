@@ -8,14 +8,20 @@ function createSlider(data){
         var img = data["items"][i].img;
         var alt = data["items"][i].alt;
 
-        content += "<img src=\"" +img+ "\" alt=\"" +alt+ "\">"
+        content += "<div class=\"slider-image\" style=\"background-image:url(images/" + img + ")\" alt=\"" + alt + "\"></div>"
     }
     $('#case_studies_slider').html(content);
 }
 var App = {
+    changeSliderHight: function (ethis) {
+        var $d = $(ethis);
+        $d.find('.owl-item').css('minHeight', $d.parent().height());
+    },
     init:function(){
         var self = this;
         this.resize();
+
+
         $(window).resize(function () {
             self.resize()
         });
@@ -24,14 +30,19 @@ var App = {
         $('.header-nav').on('click', function (e) {
             e.preventDefault();
             $('body').toggleClass('nav-open');
-        })
+        });
+
+
+        /* equal heights*/
+        $('.eq').responsiveEqualHeightGrid();
 
         /* case study slider*/
         $("#case_studies_slider").owlCarousel({
             singleItem : true,
-            autoHeight : true,
             jsonPath : 'json/case_studies_slider.json',
-            jsonSuccess : createSlider
+            jsonSuccess: createSlider,
+            beforeUpdate: App.changeSliderHight,
+            afterInit: App.changeSliderHight
         });
 
     }, resize: function(){
@@ -45,7 +56,7 @@ var App = {
 
     }
 
-}
+};
 
 $(function(){
    App.init();

@@ -254,7 +254,7 @@ header{
 
   &#home{
     background-image: url("../images/home-about.jpg");
-    @include susy-breakpoint($desktop){
+    @include susy-breakpoint($tablet) {
       .container{
         @include vertical-align;
         left: 50%;
