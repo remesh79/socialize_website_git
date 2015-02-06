@@ -1,0 +1,12 @@
+{
+  "type": "html",
+  "items": [
+    {
+      "html": "<ul class=\"list services-list\"><li><div class=\"image\"><img src=\"images/services-1.png\" alt=\"\"/></div><a>Responsive Websites</a></li><li><div class=\"image\"><img src=\"images/services-2.png\" alt=\"\"/></div><a>Web Apps & Games</a></li><li><div class=\"image\"><img src=\"images/services-3.png\" alt=\"\"/></div><a>Video Production</a></li></ul>"
+    },
+    {
+      "html": "<ul class=\"list services-list\"><li><div class=\"image\"><img src=\"images/services-1.png\" alt=\"\"/></div><a>Responsive Websites</a></li><li><div class=\"image\"><img src=\"images/services-2.png\" alt=\"\"/></div><a>Web Apps & Games</a></li><li><div class=\"image\"><img src=\"images/services-3.png\" alt=\"\"/></div><a>Video Production</a></li></ul>"
+    }
+  ]
+}
+

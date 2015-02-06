@@ -105,12 +105,15 @@ header{
     padding: gutter();
     @include susy-breakpoint($desktop) {
       text-align: right !important;
+      h1 {
+        text-align: right;
+      }
       width: span(7 of 16);
       float: left;
-      .ctn{
+      /*.ctn{
         @include span(4 of 7 last);
         float: right;
-      }
+      }*/
     }
 
   }
@@ -119,11 +122,12 @@ header{
 /*
     padding: gutter();
 */
+    min-height: 250px;
     @include susy-breakpoint($desktop) {
+      min-height: 500px;
       text-align: left;
       width: span(9 wide of 16);
       float: left;
-      background: red;
       /*.ctn{
         @include span(5 of 9 last);
         float: left;

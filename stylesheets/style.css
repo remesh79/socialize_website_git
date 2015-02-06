@@ -139,12 +139,33 @@ header p { font-weight: 700; color: #fff; }
 /* section blocks*/
 .pages { overflow: hidden; *zoom: 1; }
 .pages .side { background: #f7941e; padding: 4.34783%; }
-@media (min-width: 900px) { .pages .side { text-align: right !important; width: 42.85714%; float: left; }
-  .pages .side .ctn { width: 55.55556%; float: right; margin-right: 0; float: right; } }
+
+@media (min-width: 900px) {
+  .pages .side {
+    text-align: right !important;
+    width: 42.85714%;
+    float: left;
+    /*.ctn{ @include span(4 of 7 last); float: right;
+   }*/
+  }
+
+  .pages .side h1 {
+    text-align: right;
+  }
+}
 .pages .slider-content { /* padding: gutter();
-*/ }
-@media (min-width: 900px) { .pages .slider-content { text-align: left; width: 57.14286%; float: left; background: red; /*.ctn{ @include span(5 of 9 last); float: left;
-}*/ } }
+*/
+  min-height: 250px;
+}
+
+@media (min-width: 900px) {
+  .pages .slider-content {
+    min-height: 500px;
+    text-align: left;
+    width: 57.14286%;
+    float: left;
+    /*.ctn{ @include span(5 of 9 last); float: left;
+   }*/ } }
 
 #content { -moz-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94); -o-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94); transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
@@ -216,9 +237,19 @@ header p { font-weight: 700; color: #fff; }
 
 body.nav-open #content { -moz-transform: translate3d(-70%, 0, 0); -webkit-transform: translate3d(-70%, 0, 0); transform: translate3d(-70%, 0, 0); }
 
-#case_studies_slider .item { background: #a1def8; padding: 30px 0px; display: block; margin: 5px; color: #FFF; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; text-align: center; }
+.owl-carousel .item {
+  background: #a1def8;
+  padding: 30px 0px;
+  display: block;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
 
-#case_studies_slider .slider-image {
+.owl-carousel .slider-image {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -233,6 +264,12 @@ body.nav-open #content { -moz-transform: translate3d(-70%, 0, 0); -webkit-transf
   margin: 0;
   bottom: 0px;
   width: 100%;
+}
+
+@media (min-width: 900px) {
+  #clients_slider .owl-item {
+    /* float: none; width: span(8  of 16) !important;*/
+  }
 }
 
 .list.careers li { width: 31.91489%; float: left; }

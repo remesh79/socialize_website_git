@@ -1,0 +1,18 @@
+{
+  "type": "html",
+  "items": [
+    {
+      "html": "<ul class=\"list clients-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
+    },
+    {
+      "html": "<ul class=\"list clients-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
+    },
+    {
+      "html": "<ul class=\"list clients-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
+    },
+    {
+      "html": "<ul class=\"list clients-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
+    }
+  ]
+}
+

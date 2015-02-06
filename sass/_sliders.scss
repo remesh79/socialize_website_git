@@ -1,4 +1,4 @@
-#case_studies_slider {
+.owl-carousel {
   .item{
     background: #a1def8;
     padding: 30px 0px;
@@ -28,4 +28,11 @@
   bottom: 0px;
   width: 100%;
 
+}
+
+#clients_slider .owl-item {
+  @include susy-breakpoint($desktop) {
+    /* float: none;
+     width: span(8  of 16) !important;*/
+  }
 }
