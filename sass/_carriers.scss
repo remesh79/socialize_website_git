@@ -48,21 +48,96 @@ body {
         margin: 0;
         padding: 0;
         border: 1px solid #333;
+        width: rem-calc(357px);
+        height: rem-calc(238px);
       }
     }
-    .box {
-
-      //width: rem-calc(358px);
-      //height: rem-calc(239px);
-      //border: 1px solid #666;
-      background: #fff;
-      .title{
+    .circle, .box {
+      .title {
         font-family: "Pacifico";
         font-size: rem-calc(17);
         margin: 0 auto;
-        line-height: 1;
-        color: $color-black;
+
         text-align: center;
+        line-height: rem-calc(20px);
+      }
+      @include vertical-center;
+    }
+    .circle {
+      width: rem-calc(124px);
+      height: rem-calc(124px);
+      //border: 1px solid #666;
+      //height: rem-calc(238px);
+      background: $color-white;
+      @include border-radius(50%);
+      margin: 0 auto;
+
+      .title {
+        padding: 0 rem-calc(5px);
+        @include vertical-center;
+
+        color: $color-black;
+
+      }
+      .count {
+        background: url("../images/icon_speech_bubble.png") no-repeat center center;
+        width: rem-calc(35px);
+        height: rem-calc(30px);
+        font-size: rem-calc(12px);
+        color: $color-white;
+        line-height: 20px;
+        position: absolute;
+        right: rem-calc(-15px);
+        top: rem-calc(5px);
+      }
+    }
+    .box {
+      .title {
+        color: $color-orange;
+        padding-bottom: rem-calc(20px);
+        //@include trace;
+
+      }
+      select{
+        background: $color-white;
+        border:none;
+        font-size: rem-calc(12px);
+      }
+      a {
+        text-transform: uppercase;
+        display: block;
+        border: 1px solid $color-white;
+        width: rem-calc(135px);
+        margin: 0 auto;
+        margin-top: rem-calc(10px);
+        padding: rem-calc(5px);
+        font-size: rem-calc(10px);
+      }
+    }
+  }
+  #social_life{
+    article{
+      aside{
+        .insta_follow{
+          text-transform: uppercase;
+          color: $color-white;
+          font-size: rem-calc(12px);
+          font-weight: bold;
+          height: rem-calc(50px);
+          display: block;
+          margin-top: 20px;
+
+
+          .ico_insta_follow{
+            border: 1px solid $color-white;
+            background: url("../images/ico_insta_follow.png") no-repeat 10px 5px;
+            padding: 5px 15px 10px 40px;
+            //line-height: rem-calc(30px);
+            margin-left: 10px;
+
+          }
+
+        }
       }
 
     }

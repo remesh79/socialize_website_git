@@ -251,8 +251,16 @@ body { background: url("../images/careers_bg.jpg"); }
 .careers .video_player img { width: 100%; }
 .careers .job_box { background: url("../images/career_jobs_bg.jpg") no-repeat left top; background-size: cover; }
 .careers .job_box .list { padding: 0; }
-.careers .job_box .list li { margin: 0; padding: 0; border: 1px solid #333; }
-.careers .job_box .box { background: #fff; }
-.careers .job_box .box .title { font-family: "Pacifico"; font-size: 1.0625rem; margin: 0 auto; line-height: 1; color: #414143; text-align: center; }
+.careers .job_box .list li { margin: 0; padding: 0; border: 1px solid #333; width: 22.3125rem; height: 14.875rem; }
+.careers .job_box .circle, .careers .job_box .box { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+.careers .job_box .circle .title, .careers .job_box .box .title { font-family: "Pacifico"; font-size: 1.0625rem; margin: 0 auto; text-align: center; line-height: 1.25rem; }
+.careers .job_box .circle { width: 7.75rem; height: 7.75rem; background: #fff; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; margin: 0 auto; }
+.careers .job_box .circle .title { padding: 0 0.3125rem; position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); color: #414143; }
+.careers .job_box .circle .count { background: url("../images/icon_speech_bubble.png") no-repeat center center; width: 2.1875rem; height: 1.875rem; font-size: 0.75rem; color: #fff; line-height: 20px; position: absolute; right: -0.9375rem; top: 0.3125rem; }
+.careers .job_box .box .title { color: #f7941e; padding-bottom: 1.25rem; }
+.careers .job_box .box select { background: #fff; border: none; font-size: 0.75rem; }
+.careers .job_box .box a { text-transform: uppercase; display: block; border: 1px solid #fff; width: 8.4375rem; margin: 0 auto; margin-top: 0.625rem; padding: 0.3125rem; font-size: 0.625rem; }
+.careers #social_life article aside .insta_follow { text-transform: uppercase; color: #fff; font-size: 0.75rem; font-weight: bold; height: 3.125rem; display: block; margin-top: 20px; }
+.careers #social_life article aside .insta_follow .ico_insta_follow { border: 1px solid #fff; background: url("../images/ico_insta_follow.png") no-repeat 10px 5px; padding: 5px 15px 10px 40px; margin-left: 10px; }
 
 .clients #content { background: url("../images/pages-bg/clients.png"); }
