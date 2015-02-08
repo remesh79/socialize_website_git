@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="compass-library">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5" />
-      <root url="file://$PROJECT_DIR$/../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3" />
-      <root url="file://$PROJECT_DIR$/../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2" />
+      <root url="file://$USER_HOME$/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5" />
+      <root url="file://$USER_HOME$/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/susy-2.2.2" />
+      <root url="file://$USER_HOME$/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3" />
     </CLASSES>
     <SOURCES />
   </library>

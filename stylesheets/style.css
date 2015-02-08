@@ -238,6 +238,8 @@ body.nav-open #content { -moz-transform: translate3d(-70%, 0, 0); -webkit-transf
 
 #the_theam_slider { background: url("../images/home-the-team.jpg") top center no-repeat; background-size: cover; }
 
+body { background: url("../images/careers_bg.jpg"); }
+
 .list.careers li { width: 31.91489%; float: left; }
 .list.careers li:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
 .list.careers li:nth-child(3n + 2) { margin-left: 34.04255%; margin-right: -100%; clear: none; }
@@ -245,5 +247,12 @@ body.nav-open #content { -moz-transform: translate3d(-70%, 0, 0); -webkit-transf
 
 @media (min-width: 900px) { #social_life aside { width: 30.15873%; float: left; margin-right: 1.5873%; }
   #social_life .right-content { width: 68.25397%; float: right; margin-right: 0; } }
+
+.careers .video_player img { width: 100%; }
+.careers .job_box { background: url("../images/career_jobs_bg.jpg") no-repeat left top; background-size: cover; }
+.careers .job_box .list { padding: 0; }
+.careers .job_box .list li { margin: 0; padding: 0; border: 1px solid #333; }
+.careers .job_box .box { background: #fff; }
+.careers .job_box .box .title { font-family: "Pacifico"; font-size: 1.0625rem; margin: 0 auto; line-height: 1; color: #414143; text-align: center; }
 
 .clients #content { background: url("../images/pages-bg/clients.png"); }

@@ -1,19 +1,69 @@
-.list{
+body {
+  background: url("../images/careers_bg.jpg");
+}
 
-  &.careers{
-    li{
+.list {
+
+  &.careers {
+    li {
       @include gallery(4 of 12);
+    }
+
+  }
+}
+
+#social_life {
+  @include susy-breakpoint($desktop) {
+    aside {
+      @include span(5 of 16 first);
+    }
+    .right-content {
+      @include span(11 of 16 last);
     }
   }
 }
 
-#social_life{
-  @include susy-breakpoint($desktop){
-    aside{
-      @include  span(5 of 16 first);
+.careers {
+  //Global Styles
+  header {
+    p {
+      //padding: 0 rem-calc(20px);
+      //text-align: center;
     }
-    .right-content{
-      @include  span(11 of 16 last);
+
+  }
+  .video_player {
+    img {
+      width: 100%;
+
+    }
+  }
+  .job_box {
+    //width:rem-calc(1083px);
+    background: url("../images/career_jobs_bg.jpg") no-repeat left top;
+    background-size: cover;
+    .list {
+      padding: 0;
+      li {
+        margin: 0;
+        padding: 0;
+        border: 1px solid #333;
+      }
+    }
+    .box {
+
+      //width: rem-calc(358px);
+      //height: rem-calc(239px);
+      //border: 1px solid #666;
+      background: #fff;
+      .title{
+        font-family: "Pacifico";
+        font-size: rem-calc(17);
+        margin: 0 auto;
+        line-height: 1;
+        color: $color-black;
+        text-align: center;
+      }
     }
   }
 }
