@@ -8,14 +8,18 @@
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css"/>
     <link href="stylesheets/owl.carousel.css" rel="stylesheet" type="text/css"/>
     <link href="stylesheets/owl.theme.css" rel="stylesheet" type="text/css"/>
-
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/grids.min.js"></script>
+    <script src="js/jquery.popupoverlay.js"></script>
     <script src="js/app.js"></script>
 </head>
 <body class="home">
 <header id="header" role="banner">
+
     <div class="container">
         <div class="logo mobile"><img src="images/svg/logo.svg" alt=""/></div>
         <nav class="header-nav">
@@ -26,10 +30,11 @@
             </div>
             <ul id="header-menu" class="header-menu">
                 <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CLIENTS</a></li>
+                <li><a href="clients.html">CLIENTS</a></li>
                 <li><a href="#">CASE STUDIES</a></li>
                 <li><a href="#">SERVICES</a></li>
-                <li class="logo"><img src="images/svg/logo.svg" alt=""/><a href="#"></a></li>
+                <li class="logo"><a href="#"><img class="logo-full" src="images/svg/logo.svg" alt=""/><img
+                        class="logo-bubble" src="images/svg/logo-bubble.svg" alt=""/></a></li>
                 <li><a href="#">TEAM</a></li>
                 <li><a href="#">CAREERS</a></li>
                 <li><a href="#">CONTACT</a></li>
@@ -39,8 +44,11 @@
     </div>
 </header>
 <main id="content" role="main">
+    <div id="paralax_bg"><img src="images/home-services.jpg" alt=""/></div>
+
     <div class="pages" id="home">
         <div class="container">
+            <button class="main_popup_open">Open popup</button>
             <header>
                 <h1 class="home-svg-title">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
@@ -203,7 +211,7 @@
                 <div id="clients_slider" class="owl-carousel"></div>
 
             </section>
-            <a class="btn" href="#">VIEW all work</a>
+            <a class="btn" href="clients.html">VIEW all work</a>
         </div>
     </div>
     <!-- #clients -->
@@ -224,6 +232,27 @@
     <!-- the_team eof -->
 </main>
 <!-- #content eof-->
-<footer role="contentinfo"></footer>
+<footer id="footer" role="contentinfo">
+    <div class="container">
+        <section class="footer-left">
+            <h1>Y U NO Click on Something</h1>
+
+            <p>
+                If you've seen enough to spark your curiousity, give us a call on <b>+971 4 3689277 </b>. Alternatively
+                you may send your enquiries on our email at <b>hello@socialize.ae</b>. We make sure to update our
+                websites <b>Privacy Policy</b>. Needless to say, this was indeed <b>created by Socialize</b>. We look
+                forward to hearing from you!
+            </p>
+        </section>
+        <section class="footer-right">
+            <div class="memo-wrapper">
+                <img class="memo" src="images/footer-bg.png" alt=""/>
+            </div>
+        </section>
+    </div>
+</footer>
+<div id="main_popup">
+    <button class="main_popup_close">Close</button>
+</div>
 </body>
 </html>

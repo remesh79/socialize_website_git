@@ -139,7 +139,10 @@ header{
 }
 
 #content{
-  @include transition(all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940))
+  @include transition(all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940));
+  background-position: top;
+  background-size: cover;
+  /*min-height: 92.8vh;*/
 }
 #header{
   background: #000;
@@ -182,6 +185,13 @@ header{
     }
   }
   .logo {
+    img {
+      vertical-align: middle;
+      &.logo-bubble {
+        @include translateY(-150px);
+        width: 40%;
+      }
+    }
     &.mobile {
       @include span(3 of 6);
       line-height: $header-height;
@@ -208,7 +218,10 @@ header{
   }
 
   @include susy-breakpoint($desktop) {
-
+    position: fixed;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
     .logo{
       &.mobile{
         display: none;
@@ -235,13 +248,65 @@ header{
             @include span(1 of 9 last);
           }
           a{
+            display: block;
+            text-align: center;
             line-height: $header-height;
+            //@include transition(all 200ms ease 50ms);
           }
         }
       }
     }
   }
+
+  &.small {
+    height: 50px;
+    #header-menu {
+      a {
+        line-height: 50px;
+      }
+    }
+
+  }
+
   @include clearfix;
+}
+
+/* footer */
+#footer {
+  background: #000000;
+  p {
+    color: #fff;
+    text-align: center;
+  }
+  b {
+    color: $color-orange;
+  }
+  .container {
+    padding-bottom: 0;
+  }
+  @include susy-breakpoint($desktop) {
+    .footer-left {
+      @include span(10 of 16 first);
+    }
+    .footer-right {
+
+      @include span(6 of 16 last);
+      text-align: center;
+
+    }
+  }
+
+  .memo-wrapper {
+    width: 100%;
+    text-align: center;
+    .memo {
+      /*@include vertical-align;
+      left: 50%;
+      @include translate(-50%,-50%);*/
+      position: relative;
+      bottom: -3px;
+    }
+  }
 }
 
 .pages{
@@ -250,11 +315,8 @@ header{
   background-position: center;
   min-height: inherit;
   text-align: center;
-  @include susy-breakpoint($desktop) {
-    .container{
-      //padding: rem-calc(30);
-    }
-  }
+  z-index: 2;
+  position: relative;
 
   &#home{
     background-image: url("../images/home-about.jpg");
@@ -273,6 +335,21 @@ header{
   &#clients{
     background-image: url("../images/home-services.jpg");
   }
+
+  @include susy-breakpoint($desktop) {
+    .container {
+      //padding: rem-calc(30);
+    }
+
+    &#services {
+      background: transparent;
+    }
+    &#clients {
+      background: transparent;
+    }
+  }
+
+
 }
 
 /*list*/
@@ -294,22 +371,27 @@ header{
 
   li{
     @include gallery(2 of 6);
-    &:nth-child(n+7){
+    /*&:nth-child(n+7){
       display: none;
-    }
+    }*/
     padding: 10px;
   }
   @include susy-breakpoint($desktop){
     li{
       @include gallery(2 of 12);
-      &:nth-child(n+4){
+      /*&:nth-child(n+4){
         display: block;
-      }
+      }*/
     }
   }
 
   &.services-list{
     li{
+      @include gallery(4 of 12);
+    }
+  }
+  &.team-list {
+    li {
       @include gallery(4 of 12);
     }
   }
@@ -331,5 +413,19 @@ body{
   }
 }
 
+/* paralax bg */
+#paralax_bg {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@import "popup";
 @import "sliders";
 @import "carriers";
+@import "clients";

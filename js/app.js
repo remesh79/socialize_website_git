@@ -1,10 +1,10 @@
-function isTouch(){
+function isTouch() {
     return Modernizr.touch;
 }
 
-function createSlider(data){
+function createSlider(data) {
     var content = "";
-    for(var i in data["items"]){
+    for (var i in data["items"]) {
         var img = data["items"][i].img;
         var alt = data["items"][i].alt;
 
@@ -12,6 +12,7 @@ function createSlider(data){
     }
     $('#case_studies_slider').html(content);
 }
+
 var App = {
     changeSliderHight: function (ethis) {
         var $d = $(ethis);
@@ -40,17 +41,87 @@ var App = {
 
         $("#" + e).html(content);
     },
-    init:function(){
-        var self = this;
-        this.resize();
+    resizeHeader: function () {
 
+
+        var ani = new TimelineLite().add([
+            TweenMax.to("#header", 3, {
+                    height: "-=20",
+                    ease: Power4.easeOut
+                }
+            ), TweenMax.to(".logo-full", 5, {
+                y: "150px",
+                ease: Power4.easeOut
+            }), TweenMax.to(".logo-bubble", 5, {
+                    y: "-50px",
+                    ease: Power4.easeOut
+                }
+            ), TweenMax.to("#header li a", 3, {
+                    lineHeight: "-=20px",
+                    ease: Power4.easeOut
+                }
+            )
+        ]);
+
+        new ScrollScene({
+            triggerElement: "#services",
+            triggerHook: "onLeave",
+            duration: 400,
+            offset: -400
+        })
+            .setTween(ani)
+            .addTo(controller)
+            .addIndicators({zindex: 3, suffix: "1"});
+    },
+    setParalax: function () {
+
+
+        new ScrollScene({
+            triggerElement: "#services",
+            triggerHook: "onEnter",
+            duration: $("#the_team").offset().top,
+            offset: 0
+        })
+            .setTween(TweenMax.to("#paralax_bg", 1, {y: "-25%", ease: Linear.easeNone}))
+            .addTo(controller)
+            .addIndicators({zindex: 2, suffix: "1"});
+    },
+    resize: function () {
+        var h = $(window).height(), paralaxBg = $('#paralax_bg');
+
+        var homeHeight = h/* - $('#header').height()*/;
+        if (!isTouch()) {
+            $("#home").css({
+                minHeight: homeHeight
+            });
+
+            paralaxBg.css({
+                top: h
+            });
+        }
+
+    },
+    setPopup: function () {
+        $('#main_popup').popup();
+    },
+    init: function () {
+        var self = this;
 
         $(window).resize(function () {
             self.resize()
         });
+        this.resize();
+
+        if (!isTouch()) {
+            this.setParalax();
+            this.resizeHeader();
+        }
+
+
+        this.setPopup();
 
         // mobile nav button
-        $('.header-nav').on('click', function (e) {
+        $('.header-nav-button').on('click', function (e) {
             e.preventDefault();
             $('body').toggleClass('nav-open');
         });
@@ -61,8 +132,8 @@ var App = {
 
         /* case study slider*/
         $("#case_studies_slider").owlCarousel({
-            singleItem : true,
-            jsonPath : 'json/case_studies_slider.json',
+            singleItem: true,
+            jsonPath: 'json/case_studies_slider.json',
             jsonSuccess: function (data) {
                 self.createSlider(data, 'case_studies_slider');
             },
@@ -73,7 +144,7 @@ var App = {
         /* case study slider*/
         $("#the_theam_slider").owlCarousel({
             singleItem: true,
-            jsonPath: 'json/case_studies_slider.json',
+            jsonPath: 'json/the_theam_slider.json',
             jsonSuccess: function (data) {
                 self.createSlider(data, 'the_theam_slider');
             },
@@ -100,19 +171,12 @@ var App = {
             }
         });
 
-    }, resize: function(){
-        var h = $(window).height() - $('#header').height();
-
-        if(!isTouch()){
-            $("#home").css({
-                minHeight: h
-            });
-        }
-
     }
 
 };
+var controller = new ScrollMagic();
 
-$(function(){
-   App.init();
+$(function () {
+
+    App.init();
 });

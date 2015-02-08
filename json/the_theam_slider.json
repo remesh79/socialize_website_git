@@ -1,0 +1,15 @@
+{
+  "type": "html",
+  "items": [
+    {
+      "html": "<ul class=\"list team-list\"><li><div class=\"image\"><img src=\"images/team/Akanksha-2.png\"></div></li><li><div class=\"image\"><img src=\"images/team/Radina-1.png\"></div></li><li><div class=\"image\"><img src=\"images/team/Simone-1.png\"></div></li><li><div class=\"image\"><img src=\"images/team/Sabrina-1.png\"></div></li><li><div class=\"image\"><img src=\"images/team/Khaled-2.png\"></div></li><li><div class=\"image\"><img src=\"images/team/Claire-1.png\"></div></li></ul>"
+    },
+    {
+      "html": "<ul class=\"list team-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
+    },
+    {
+      "html": "<ul class=\"list team-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
+    }
+  ]
+}
+
