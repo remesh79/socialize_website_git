@@ -1,15 +1,13 @@
 // Screen
 // ======
-
-
 @import "settings";
-@import 'fonts';
+
 html{
   font-size: 85%;
   /*@include susy-breakpoint($tablet) {
 
-  }
-*/
+  }*/
+
   // Desktop View
   @include susy-breakpoint($desktop) {
     font-size: 100%;

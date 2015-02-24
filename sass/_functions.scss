@@ -9,7 +9,6 @@ $rem-base: 16px !default;
 // We use this to prevent styles from being loaded multiple times for components that rely on other components.
 $modules: () !default;
 
-
 @mixin exports($name) {
   // Import from global scope
   $modules: $modules !global;
