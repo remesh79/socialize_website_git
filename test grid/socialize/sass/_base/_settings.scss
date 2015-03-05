@@ -1,0 +1,22 @@
+@import "normalize";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+$desktop: 1005px;
+$tablet: 768px;
+
+$header-height: rem-calc(70);
+
+
+
+$total-columns  : 6;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+$color-orange: #f7941e;
+$color-black: #414143;
+$color-white: #fff;
+
+
+// layouts
+
+$l_desktop: 12 $gutter-width;

@@ -1,17 +1,88 @@
 {
   "type": "html",
+  "cat" : "client",
   "items": [
     {
-      "html": "<ul class=\"list clients-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
+      "sub": [
+        {
+          "img": "images/svg/clients/clients-kraft.svg",
+          "title" : "Kraft"
+        },
+        {
+          "img": "images/svg/clients/clients-switz.svg",
+          "title" : "Switz"
+        },
+        {
+          "img": "images/svg/clients/clients-clorox.svg",
+          "title" : "Clorox"
+        },
+        {
+          "img": "images/svg/clients/clients-splash.svg",
+          "title" : "Splash"
+        },
+        {
+          "img": "images/svg/clients/clients-sony.svg",
+          "title" : "Sony"
+        },
+        {
+          "img": "images/svg/clients/clients-future-city.svg",
+          "title" : "Future City"
+        },
+        {
+          "img": "images/svg/clients/clients-arabian-automobiles.svg",
+          "title" : "Arabian Automobiles"
+        },
+        {
+          "img": "images/svg/clients/clients-moe.svg",
+          "title" : "Mall of the Emirates"
+        },
+        {
+          "img": "images/svg/clients/clients-city-center.svg",
+          "title" : "City Center"
+        },
+        {
+          "img": "images/svg/clients/clients-huawei.svg",
+          "title" : "Huawei"
+        },
+        {
+          "img": "images/svg/clients/clients-reed-exhibitions.svg",
+          "title" : "Reed Exhibitions"
+        },
+        {
+          "img": "images/svg/clients/clients-reebok.svg",
+          "title" : "Reebok"
+        }
+
+      ]
     },
     {
-      "html": "<ul class=\"list clients-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
-    },
-    {
-      "html": "<ul class=\"list clients-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
-    },
-    {
-      "html": "<ul class=\"list clients-list\"><li><div class=\"image\"><img src=\"images/clients/1.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/2.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/3.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/4.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/5.png\" alt=\"\"/></div></li><li><div class=\"image\"><img src=\"images/clients/6.png\" alt=\"\"/></div></li></ul>"
+      "sub": [
+        {
+          "img": "images/svg/clients/clients-arabian-automobiles.svg",
+          "title" : "Arabian Automobiles"
+        },
+        {
+          "img": "images/svg/clients/clients-moe.svg",
+          "title" : "Mall of the Emirates"
+        },
+        {
+          "img": "images/svg/clients/clients-city-center.svg",
+          "title" : "City Center"
+        },
+        {
+          "img": "images/svg/clients/clients-huawei.svg",
+          "title" : "Huawei"
+        },
+        {
+          "img": "images/svg/clients/clients-reed-exhibitions.svg",
+          "title" : "Reed Exhibitions"
+        },
+        {
+          "img": "images/svg/clients/clients-reebok.svg",
+          "title" : "Reebok"
+        }
+
+      ]
     }
   ]
 }

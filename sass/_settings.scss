@@ -1,7 +1,6 @@
 @import "normalize";
 @import "compass/css3";
 @import "compass/utilities/general/clearfix";
-
 @import "susy";
 @import "functions";
 
@@ -16,6 +15,7 @@ $tablet: 600px;
 
 @import "grids";
 @include border-box-sizing;
+
 
 
 //@user: Remesh

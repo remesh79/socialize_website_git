@@ -66,15 +66,7 @@ header{
     color: #fff;
   }
 }
-.btn{
-  border: rem-calc(2px) solid #FFF;
-  background: none transparent;
-  font-weight: 700;
-  font-size: rem-calc(15);
-  padding: rem-calc(10) rem-calc(30);
-  display: inline-block;
-  text-transform: uppercase;
-}
+
 .container {
   @include container($susy);
   padding: gutter() gutter();
@@ -87,10 +79,10 @@ header{
 
   // Desktop View
   @include susy-breakpoint($desktop) {
-    @include container(16);
+    @include container(12);
     padding-left: 0;
     padding-right: 0;
-
+    max-width: 1140px;
   }
 
 }
@@ -106,7 +98,7 @@ header{
       h1 {
         text-align: right;
       }
-      width: span(7 of 16);
+      width: span(5 of 12);
       float: left;
       /*.ctn{
         @include span(4 of 7 last);
@@ -120,11 +112,11 @@ header{
 /*
     padding: gutter();
 */
-    min-height: 250px;
+    min-height: 400px;
     @include susy-breakpoint($desktop) {
       min-height: 500px;
       text-align: left;
-      width: span(9 wide of 16);
+      width: span(7 wide of 12);
       float: left;
       /*.ctn{
         @include span(5 of 9 last);
@@ -143,10 +135,10 @@ header{
   /*min-height: 92.8vh;*/
 }
 #header{
-  background: #000;
+  background: rgba(#000,.85);
   height: $header-height;
   position: relative;
-
+  border-bottom: 1px solid #212020;
   .container{
     padding: 0;
   }
@@ -210,6 +202,16 @@ header{
     ul{
       @include translate(100%, 0);
       display: none;
+      li{
+        a{
+          color: #727275;
+        }
+        &.active, &:hover{
+          a{
+            color: $color-orange;
+          }
+        }
+      }
     }
     border-left: 1px solid #252525;
     
@@ -241,15 +243,16 @@ header{
         text-align: center;
         li{
           display: inline-block;
-          @include span(1 of 9);
+          @include span(1 of 7);
           &:last-child{
-            @include span(1 of 9 last);
+            @include span(1 of 7 last);
           }
           a{
             display: block;
             text-align: center;
             line-height: $header-height;
             //@include transition(all 200ms ease 50ms);
+
           }
         }
       }
@@ -261,10 +264,12 @@ header{
     #header-menu {
       a {
         line-height: 50px;
+
       }
     }
 
   }
+
 
   @include clearfix;
 }
@@ -284,11 +289,11 @@ header{
   }
   @include susy-breakpoint($desktop) {
     .footer-left {
-      @include span(10 of 16 first);
+      @include span(7 of 12 first);
     }
     .footer-right {
 
-      @include span(6 of 16 last);
+      @include span(5 of 12 last);
       text-align: center;
 
     }
@@ -324,6 +329,9 @@ header{
         left: 50%;
         @include translate(-50%,-50%);
       }
+    }
+    .btn{
+      margin-top: span(2);
     }
   }
   &#services{
@@ -400,7 +408,27 @@ header{
   max-width: 600px;
   margin: 0 auto;
 }
-
+.br{
+  display: none;
+  @include susy-breakpoint($desktop){
+    display: block;
+  }
+}
+.scroll__down{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  @include translateX(-50%);
+  font-size: rem-calc(12);
+  i{
+    color: #fff;
+    height: rem-calc(20);
+    line-height: rem-calc(16px);
+    vertical-align: bottom;
+    width: rem-calc(25);
+    font-size: rem-calc(25);
+  }
+}
 
 // body parent classess
 body{
@@ -427,3 +455,7 @@ body{
 @import "sliders";
 @import "carriers";
 @import "clients";
+@import "teams";
+@import "side_floating";
+@import "icons";
+@import "buttons";

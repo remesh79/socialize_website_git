@@ -1,0 +1,15 @@
+.btn{
+  border: rem-calc(2px) solid #FFF;
+  background: none transparent;
+  font-weight: 700;
+  font-size: rem-calc(15);
+  padding: rem-calc(10) rem-calc(30);
+  display: inline-block;
+  text-transform: uppercase;
+  &.small{
+    border-width: rem-calc(1);
+    font-size: rem-calc(10);
+    padding: rem-calc(5) rem-calc(20);
+    font-weight: 500;
+  }
+}

@@ -19,17 +19,26 @@ var App = {
         $d.find('.owl-item').css('minHeight', $d.parent().height());
     },
     createSlider: function (data, e, type) {
-        console.log(data);
-
+        var hasSub = false;
         var content = "", new_content;
         var dataType = !data["type"] ? 'image' : data["type"];
         for (var i in data["items"]) {
-            var img = data["items"][i].img;
-            var alt = data["items"][i].alt;
+            var items = data["items"][i];
+            var img = items.img;
+            var alt = items.alt;
             if (dataType == 'image') {
                 content += "<div class=\"slider-image\" style=\"background-image:url(images/" + img + ")\" alt=\"" + alt + "\"></div>"
             } else {
-                content += data["items"][i].html;
+                if(typeof items.sub != 'undefined'){
+                    var contentSub  = '';
+                    for(var n in items.sub){
+                        var sub = items.sub[n];
+                        contentSub += '<li><div class="image"><img src="'+sub.img+'" alt="'+sub.title+'"/></div></li>';
+                    }
+                    content += '<ul class="list '+data.cat+'-list">'+contentSub+'</ul>';
+                }else{
+                    content += items.html;
+                }
             }
         }
 
@@ -170,6 +179,26 @@ var App = {
                 self.createSlider(data, 'clients_slider', 'image');
             }
         });
+
+        $(".feed .action").on('click', function (e) {
+            e.preventDefault();
+
+            $('.open-section').removeClass('open-section')
+            $('.open-item').removeClass('open-item')
+            $('.feed .active').removeClass('active');
+            var d = $(this), id = d.attr('href'), p = d.parents('.floating-box');
+            var article = $(id).find('article');
+            d.addClass('active');
+            $(id).addClass('open-section');
+            TweenMax.to(p,0.8,{clearProps:"all",className:'+=open',ease:Cubic.easeInOut},0);
+            TweenMax.staggerTo(article, 1, {clearProps:"all",className:'+=open-item',delay:0.2, ease:Power4.easeOut},0.1);
+        });
+
+        $('.feed__close').on('click', function (e) {
+            e.preventDefault();
+            var d = $(this), p = d.parents('.floating-box');
+            TweenMax.to(p,0.8,{clearProps:"all",className:'-=open',ease:Cubic.easeInOut},0);
+        })
 
     }
 

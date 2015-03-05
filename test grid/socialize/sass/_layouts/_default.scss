@@ -1,0 +1,66 @@
+body{
+  padding: 0 gutter(8);
+
+
+  @include susy-breakpoint($desktop, $susy_desktop){
+    padding: 0;
+  }
+
+}
+
+main{
+  padding-top: $header-height;
+}
+
+.header__nav, .page__inner{
+  @include container;
+  @include clearfix;
+  margin-bottom: gutter();
+  @include susy-breakpoint($desktop, $susy_desktop){
+    @include container;
+    @include clearfix;
+    margin-bottom: gutter(12);
+
+  }
+}
+
+/* header*/
+@import "l_header";
+.page__inner{
+
+  .page__content{
+    min-height: 100px;
+  }
+
+  .page__left{
+    /*temp*/
+    min-height: 100px;
+    background: red;
+    @include span(2 of 6);
+    @include susy-breakpoint($desktop, $susy_desktop){
+      @include span(4 of 12);
+    }
+  }
+
+  .page__right{
+    /*temp*/
+    min-height: 100px;
+    background: red;
+    @include span(4 of 6 last);
+    @include susy-breakpoint($desktop, $susy_desktop){
+      @include span(8 of 12 last);
+    }
+  }
+
+  @include susy-breakpoint($desktop, $susy_desktop){
+
+    &.centered{
+      .page__content{
+        @include span(8 of 12);
+        margin-left: span(2 wide of 12);
+      }
+    }
+
+
+  }
+}
