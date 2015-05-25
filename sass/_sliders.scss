@@ -1,0 +1,43 @@
+.owl-carousel {
+  .item{
+    background: #a1def8;
+    padding: 30px 0px;
+    display: block;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .slider-image {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+}
+
+.owl-controls {
+  position: absolute;
+  margin: 0;
+  bottom: 0px;
+  width: 100%;
+
+}
+
+#clients_slider .owl-item {
+  @include susy-breakpoint($desktop) {
+    /* float: none;
+     width: span(8  of 16) !important;*/
+  }
+}
+
+#the_theam_slider {
+  background: url("../images/home-the-team.jpg") top center no-repeat;
+  background-size: cover;
+}

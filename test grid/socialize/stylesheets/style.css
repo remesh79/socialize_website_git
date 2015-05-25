@@ -1,0 +1,549 @@
+/*
+@function data($attr) {
+  @if $namespace {
+    @return '[data-' + $namespace + '-' + $attr + ']';
+  }
+
+  @return '[data-' + $attr + ']';
+}
+*/
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 29, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 40, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 47, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/* line 11, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 19, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a {
+  background: transparent;
+}
+
+/* line 15, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 15, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 22, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 29, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 36, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 43, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 49, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 57, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 61, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+img {
+  border: 0;
+}
+
+/* line 15, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 15, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 23, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 29, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+/* line 15, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 27, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button {
+  overflow: visible;
+}
+
+/* line 36, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 47, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 57, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 64, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 73, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input {
+  line-height: normal;
+}
+
+/* line 83, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 93, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 102, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 113, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 120, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 129, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 136, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 143, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 14, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, ../sass/_base/_b_defaults.scss */
+body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* line 5, ../sass/_base/_b_defaults.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 8, ../sass/_base/_b_defaults.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 11, ../sass/_base/_b_defaults.scss */
+ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.otf") format("opentype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Italic.eot");
+  src: url("../fonts/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Italic.woff") format("woff"), url("../fonts/Lato-Italic.ttf") format("truetype"), url("../fonts/Lato-Italic.otf") format("opentype"), url("../fonts/Lato-Italic.svg#Lato-Italic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Black.eot");
+  src: url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype"), url("../fonts/Lato-Black.otf") format("opentype"), url("../fonts/Lato-Black.svg#Lato-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-BlackItalic.eot");
+  src: url("../fonts/Lato-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-BlackItalic.woff") format("woff"), url("../fonts/Lato-BlackItalic.ttf") format("truetype"), url("../fonts/Lato-BlackItalic.otf") format("opentype"), url("../fonts/Lato-BlackItalic.svg#Lato-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.otf") format("opentype"), url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-BoldItalic.eot");
+  src: url("../fonts/Lato-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-BoldItalic.woff") format("woff"), url("../fonts/Lato-BoldItalic.ttf") format("truetype"), url("../fonts/Lato-BoldItalic.otf") format("opentype"), url("../fonts/Lato-BoldItalic.svg#Lato-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url("../fonts/Pacifico-Regular.eot");
+  src: url("../fonts/Pacifico-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Pacifico-Regular.woff") format("woff"), url("../fonts/Pacifico-Regular.ttf") format("truetype"), url("../fonts/Pacifico-Regular.otf") format("opentype"), url("../fonts/Pacifico-Regular.svg#Pacifico-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FB02;
+}
+/* line 21, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../sass/_layouts/_default.scss */
+body {
+  padding: 0 2.5641%;
+}
+@media (min-width: 1005px) {
+  /* line 1, ../sass/_layouts/_default.scss */
+  body {
+    padding: 0;
+  }
+}
+
+/* line 11, ../sass/_layouts/_default.scss */
+main {
+  padding-top: 4.375rem;
+}
+
+/* line 15, ../sass/_layouts/_default.scss */
+.header__nav, .page__inner {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80%, rgba(179, 179, 255, 0.25)), color-stop(80%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-size: 17.24138%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 3.44828%;
+}
+/* line 12, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.header__nav:after, .page__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1005px) {
+  /* line 15, ../sass/_layouts/_default.scss */
+  .header__nav, .page__inner {
+    max-width: 62.8125rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80%, rgba(179, 179, 255, 0.25)), color-stop(80%, rgba(0, 0, 0, 0)));
+    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+    overflow: hidden;
+    *zoom: 1;
+    margin-bottom: 1.69492%;
+  }
+  /* line 12, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  .header__nav:after, .page__inner:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/* header*/
+/* line 1, ../sass/_layouts/_l_header.scss */
+header {
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  width: 100%;
+}
+/* line 5, ../sass/_layouts/_l_header.scss */
+header .logo-bubble {
+  display: none;
+}
+/* line 9, ../sass/_layouts/_l_header.scss */
+header .logo a {
+  width: 85%;
+}
+
+/*header navigation*/
+/* line 16, ../sass/_layouts/_l_header.scss */
+.header__nav {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+/* line 19, ../sass/_layouts/_l_header.scss */
+.header__nav .header__menu {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 20, ../sass/_layouts/_l_header.scss */
+.header__nav .header__menu li {
+  position: relative;
+}
+@media (min-width: 1005px) {
+  /* line 24, ../sass/_layouts/_l_header.scss */
+  .header__nav .header__menu li {
+    height: 4.375rem;
+    text-align: center;
+    width: 13.04348%;
+    float: left;
+    margin-right: 1.44928%;
+  }
+  /* line 27, ../sass/_layouts/_l_header.scss */
+  .header__nav .header__menu li a {
+    color: #727275;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  /* line 32, ../sass/_layouts/_l_header.scss */
+  .header__nav .header__menu li.logo {
+    width: 13.04348%;
+    float: left;
+    margin-right: 1.44928%;
+  }
+  /* line 35, ../sass/_layouts/_l_header.scss */
+  .header__nav .header__menu li:last-child {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 31, ../sass/_layouts/_default.scss */
+.page__inner .page__content {
+  min-height: 100px;
+}
+/* line 35, ../sass/_layouts/_default.scss */
+.page__inner .page__left {
+  /*temp*/
+  min-height: 100px;
+  background: red;
+  width: 31.03448%;
+  float: left;
+  margin-right: 3.44828%;
+}
+@media (min-width: 1005px) {
+  /* line 35, ../sass/_layouts/_default.scss */
+  .page__inner .page__left {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+/* line 45, ../sass/_layouts/_default.scss */
+.page__inner .page__right {
+  /*temp*/
+  min-height: 100px;
+  background: red;
+  width: 65.51724%;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 1005px) {
+  /* line 45, ../sass/_layouts/_default.scss */
+  .page__inner .page__right {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1005px) {
+  /* line 58, ../sass/_layouts/_default.scss */
+  .page__inner.centered .page__content {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 16.94915%;
+  }
+}

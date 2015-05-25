@@ -8,6 +8,7 @@ $rem-base: 16px !default;
 // IMPORT ONCE
 // We use this to prevent styles from being loaded multiple times for components that rely on other components.
 $modules: () !default;
+
 @mixin exports($name) {
   // Import from global scope
   $modules: $modules !global;
@@ -94,6 +95,7 @@ $modules: () !default;
   @return $value;
 }
 
+/*
 @function data($attr) {
   @if $namespace {
     @return '[data-' + $namespace + '-' + $attr + ']';
@@ -101,6 +103,8 @@ $modules: () !default;
 
   @return '[data-' + $attr + ']';
 }
+*/
+
 
 // REM CALC
 
@@ -144,3 +148,34 @@ $modules: () !default;
 @function em-calc($values){
   @return rem-calc($values);
 }
+
+@mixin vertical-align {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  @include transform(translateY(-50%));
+}
+
+@mixin vertical-align-none {
+  position: relative;
+  top: auto;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  @include transform(translateY(0%));
+}
+
+//badbuzz
+@mixin trace{
+  border: 1px solid #f00;
+}
+@mixin vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+

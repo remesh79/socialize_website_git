@@ -1,0 +1,11 @@
+.popup_visible {
+  #content, #header, #footer {
+    @include susy-breakpoint($desktop) {
+      @include filter(blur(5px));
+    }
+  }
+}
+
+#main_popup {
+
+}

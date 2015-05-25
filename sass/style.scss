@@ -1,0 +1,461 @@
+// Screen
+// ======
+@import "settings";
+
+html{
+  font-size: 85%;
+  /*@include susy-breakpoint($tablet) {
+
+  }*/
+
+  // Desktop View
+  @include susy-breakpoint($desktop) {
+    font-size: 100%;
+  }
+}
+body{
+  font-family:'Lato';
+  font-size: rem-calc(16);
+}
+p{
+  line-height: 1.6;
+  margin-bottom: rem-calc(20);
+}
+figcaption{
+  color: #fff;
+  font-weight:700;
+}
+figure{
+  margin: rem-calc(10) ;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  li{
+    list-style: none;
+  }
+}
+h1{
+  font-family: "Pacifico";
+  font-size: rem-calc(42);
+  margin: 0 0 rem-calc(25);
+  line-height: 1;
+  color: $color-orange;
+  text-align: center;
+}
+
+.home{
+  h1{
+    color: #fff;
+  }
+}
+
+
+
+.side__color{
+  background: red;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+header{
+  p{
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+.container {
+  @include container($susy);
+  padding: gutter() gutter();
+
+  // Tablet View
+  @include susy-breakpoint($tablet) {
+    @include container(10);
+
+  }
+
+  // Desktop View
+  @include susy-breakpoint($desktop) {
+    @include container(12);
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1140px;
+  }
+
+}
+/* section blocks*/
+.pages{
+
+  //left section of 2 block sections
+  .side{
+    background: $color-orange;
+    padding: gutter();
+    @include susy-breakpoint($desktop) {
+      text-align: right !important;
+      h1 {
+        text-align: right;
+      }
+      width: span(5 of 12);
+      float: left;
+      /*.ctn{
+        @include span(4 of 7 last);
+        float: right;
+      }*/
+    }
+
+  }
+  //right section of 2 block sections
+  .slider-content{
+/*
+    padding: gutter();
+*/
+    min-height: 400px;
+    @include susy-breakpoint($desktop) {
+      min-height: 500px;
+      text-align: left;
+      width: span(7 wide of 12);
+      float: left;
+      /*.ctn{
+        @include span(5 of 9 last);
+        float: left;
+      }*/
+    }
+
+  }
+  @include clearfix;
+}
+
+#content{
+  @include transition(all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940));
+  background-position: top;
+  background-size: cover;
+  /*min-height: 92.8vh;*/
+}
+#header{
+  background: rgba(#000,.85);
+  height: $header-height;
+  position: relative;
+  border-bottom: 1px solid #212020;
+  .container{
+    padding: 0;
+  }
+
+  .header-nav-button{
+    width: rem-calc(58);
+    position: relative;
+    top: 50%;
+    text-align: right;
+    margin: 0 auto ;
+    cursor: pointer;
+    @include translateY(-50%);
+    span{
+      position: relative;
+      display: block;
+      width: rem-calc(58);
+      height: rem-calc(5);
+      background: #fff;
+      top: 0;
+      margin-bottom:  rem-calc(10);
+      &.dot{
+        width: rem-calc(58) - rem-calc(10);
+        margin-left: rem-calc(10) ;
+        &:before{
+          content: "";
+          position: absolute;
+          left: rem-calc(-10);
+          width: rem-calc(5);
+          height: rem-calc(5);
+          border-radius: rem-calc(5);
+          background: #fff;
+        }
+      }
+    }
+  }
+  .logo {
+    img {
+      vertical-align: middle;
+      &.logo-bubble {
+        @include translateY(-150px);
+        width: 40%;
+      }
+    }
+    &.mobile {
+      @include span(3 of 6);
+      line-height: $header-height;
+      img{
+        width: rem-calc(150);
+        vertical-align: middle;
+      }
+      position: absolute;
+      left: rem-calc(10);
+
+    }
+  }
+  .header-nav{
+    height: $header-height;
+    position: absolute;
+    right: 0px;
+    width: $header-height;
+    ul{
+      @include translate(100%, 0);
+      display: none;
+      li{
+        a{
+          color: #727275;
+        }
+        &.active, &:hover{
+          a{
+            color: $color-orange;
+          }
+        }
+      }
+    }
+    border-left: 1px solid #252525;
+    
+  }
+
+  @include susy-breakpoint($desktop) {
+    position: fixed;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    .logo{
+      &.mobile{
+        display: none;
+      }
+    }
+    .header-nav-button{
+      display: none;
+    }
+    .header-nav{
+      @include span(6);
+      border: none;
+      position: relative;
+      margin-right: 0;
+      ul{
+        padding: 0;
+        margin: 0;
+        display: block;
+        @include translate(0,0);
+        text-align: center;
+        li{
+          display: inline-block;
+          @include span(1 of 7);
+          &:last-child{
+            @include span(1 of 7 last);
+          }
+          a{
+            display: block;
+            text-align: center;
+            line-height: $header-height;
+            //@include transition(all 200ms ease 50ms);
+
+          }
+        }
+      }
+    }
+  }
+
+  &.small {
+    height: 50px;
+    #header-menu {
+      a {
+        line-height: 50px;
+
+      }
+    }
+
+  }
+
+
+  @include clearfix;
+}
+
+/* footer */
+#footer {
+  background: #000000;
+  p {
+    color: #fff;
+    text-align: center;
+  }
+  b {
+    color: $color-orange;
+  }
+  .container {
+    padding-bottom: 0;
+  }
+  @include susy-breakpoint($desktop) {
+    .footer-left {
+      @include span(7 of 12 first);
+    }
+    .footer-right {
+
+      @include span(5 of 12 last);
+      text-align: center;
+
+    }
+  }
+
+  .memo-wrapper {
+    width: 100%;
+    text-align: center;
+    .memo {
+      /*@include vertical-align;
+      left: 50%;
+      @include translate(-50%,-50%);*/
+      position: relative;
+      bottom: -3px;
+    }
+  }
+}
+
+.pages{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: inherit;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+
+  &#home{
+    background-image: url("../images/home-about.jpg");
+    @include susy-breakpoint($tablet) {
+      .container{
+        @include vertical-align;
+        left: 50%;
+        @include translate(-50%,-50%);
+      }
+    }
+    .btn{
+      margin-top: span(2);
+    }
+  }
+  &#services{
+    background-image: url("../images/home-services.jpg");
+    background-position: 0 0;
+  }
+  &#clients{
+    background-image: url("../images/home-services.jpg");
+  }
+
+  @include susy-breakpoint($desktop) {
+    .container {
+      //padding: rem-calc(30);
+    }
+
+    &#services {
+      background: transparent;
+    }
+    &#clients {
+      background: transparent;
+    }
+  }
+
+
+}
+
+/*list*/
+.list{
+  @include clearfix;
+  padding:  gutters() 0 ;
+
+  .image{
+    position: relative;
+    img{
+      max-width: 100%;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      @include translate(-50%,-50%);
+    }
+    min-height: 120px;
+  }
+
+  li{
+    @include gallery(2 of 6);
+    /*&:nth-child(n+7){
+      display: none;
+    }*/
+    padding: 10px;
+  }
+  @include susy-breakpoint($desktop){
+    li{
+      @include gallery(2 of 12);
+      /*&:nth-child(n+4){
+        display: block;
+      }*/
+    }
+  }
+
+  &.services-list{
+    li{
+      @include gallery(4 of 12);
+    }
+  }
+  &.team-list {
+    li {
+      @include gallery(4 of 12);
+    }
+  }
+}
+
+/* home svg icon*/
+.home-svg-title {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.br{
+  display: none;
+  @include susy-breakpoint($desktop){
+    display: block;
+  }
+}
+.scroll__down{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  @include translateX(-50%);
+  font-size: rem-calc(12);
+  i{
+    color: #fff;
+    height: rem-calc(20);
+    line-height: rem-calc(16px);
+    vertical-align: bottom;
+    width: rem-calc(25);
+    font-size: rem-calc(25);
+  }
+}
+
+// body parent classess
+body{
+  &.nav-open{
+      #content{
+        @include translate3d(-70%,0,0);
+      }
+  }
+}
+
+/* paralax bg */
+#paralax_bg {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@import "popup";
+@import "sliders";
+@import "carriers";
+@import "clients";
+@import "teams";
+@import "side_floating";
+@import "icons";
+@import "buttons";

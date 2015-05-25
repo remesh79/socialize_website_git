@@ -1,0 +1,43 @@
+header{
+  background: rgba(#000,0.75);
+  position: fixed;
+  width: 100%;
+  .logo-bubble{
+    display: none;
+  }
+  .logo{
+    a{
+      width: 85%;
+    }
+  }
+}
+
+/*header navigation*/
+.header__nav{
+  font-size: rem-calc(12);
+  margin-bottom: 0;
+  .header__menu{
+    li{
+      position: relative;
+    }
+    @include susy-breakpoint($desktop, $susy_desktop){
+      li{
+        height: $header-height;
+        text-align: center;
+        a{
+          color: #727275;
+          @include vertical-align-center;
+        }
+        @include span(2 of 14);
+        &.logo{
+          @include span(2 of 14);
+        }
+        &:last-child{
+          @include last();
+        }
+      }
+    }
+    @include clearfix;
+
+  }
+}

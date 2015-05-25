@@ -1,0 +1,89 @@
+{
+  "type": "html",
+  "cat" : "client",
+  "items": [
+    {
+      "sub": [
+        {
+          "img": "images/svg/clients/clients-kraft.svg",
+          "title" : "Kraft"
+        },
+        {
+          "img": "images/svg/clients/clients-switz.svg",
+          "title" : "Switz"
+        },
+        {
+          "img": "images/svg/clients/clients-clorox.svg",
+          "title" : "Clorox"
+        },
+        {
+          "img": "images/svg/clients/clients-splash.svg",
+          "title" : "Splash"
+        },
+        {
+          "img": "images/svg/clients/clients-sony.svg",
+          "title" : "Sony"
+        },
+        {
+          "img": "images/svg/clients/clients-future-city.svg",
+          "title" : "Future City"
+        },
+        {
+          "img": "images/svg/clients/clients-arabian-automobiles.svg",
+          "title" : "Arabian Automobiles"
+        },
+        {
+          "img": "images/svg/clients/clients-moe.svg",
+          "title" : "Mall of the Emirates"
+        },
+        {
+          "img": "images/svg/clients/clients-city-center.svg",
+          "title" : "City Center"
+        },
+        {
+          "img": "images/svg/clients/clients-huawei.svg",
+          "title" : "Huawei"
+        },
+        {
+          "img": "images/svg/clients/clients-reed-exhibitions.svg",
+          "title" : "Reed Exhibitions"
+        },
+        {
+          "img": "images/svg/clients/clients-reebok.svg",
+          "title" : "Reebok"
+        }
+
+      ]
+    },
+    {
+      "sub": [
+        {
+          "img": "images/svg/clients/clients-arabian-automobiles.svg",
+          "title" : "Arabian Automobiles"
+        },
+        {
+          "img": "images/svg/clients/clients-moe.svg",
+          "title" : "Mall of the Emirates"
+        },
+        {
+          "img": "images/svg/clients/clients-city-center.svg",
+          "title" : "City Center"
+        },
+        {
+          "img": "images/svg/clients/clients-huawei.svg",
+          "title" : "Huawei"
+        },
+        {
+          "img": "images/svg/clients/clients-reed-exhibitions.svg",
+          "title" : "Reed Exhibitions"
+        },
+        {
+          "img": "images/svg/clients/clients-reebok.svg",
+          "title" : "Reebok"
+        }
+
+      ]
+    }
+  ]
+}
+

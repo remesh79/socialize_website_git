@@ -1,0 +1,182 @@
+
+
+/* line 1, ../sass/_layouts/_default.scss */
+body {
+  padding: 0 2.5641%;
+}
+@media (min-width: 1005px) {
+  /* line 1, ../sass/_layouts/_default.scss */
+  body {
+    padding: 0;
+  }
+}
+
+/* line 11, ../sass/_layouts/_default.scss */
+main {
+  padding-top: 4.375rem;
+}
+
+/* line 15, ../sass/_layouts/_default.scss */
+.header__nav, .page__inner {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80%, rgba(179, 179, 255, 0.25)), color-stop(80%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-size: 17.24138%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 3.44828%;
+}
+/* line 12, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.header__nav:after, .page__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1005px) {
+  /* line 15, ../sass/_layouts/_default.scss */
+  .header__nav, .page__inner {
+    max-width: 62.8125rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80%, rgba(179, 179, 255, 0.25)), color-stop(80%, rgba(0, 0, 0, 0)));
+    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+    overflow: hidden;
+    *zoom: 1;
+    margin-bottom: 1.69492%;
+  }
+  /* line 12, ../../../../../../../TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  .header__nav:after, .page__inner:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/* header*/
+/* line 1, ../sass/_layouts/_l_header.scss */
+#header {
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  width: 100%;
+}
+/* line 5, ../sass/_layouts/_l_header.scss */
+#header .logo-bubble {
+  display: none;
+}
+/* line 9, ../sass/_layouts/_l_header.scss */
+#header .logo a {
+  width: 85%;
+}
+
+/*header navigation*/
+/* line 16, ../sass/_layouts/_l_header.scss */
+.header__nav {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+/* line 19, ../sass/_layouts/_l_header.scss */
+.header__nav .header__menu {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 20, ../sass/_layouts/_l_header.scss */
+.header__nav .header__menu li {
+  position: relative;
+}
+@media (min-width: 1005px) {
+  /* line 24, ../sass/_layouts/_l_header.scss */
+  .header__nav .header__menu li {
+    height: 4.375rem;
+    text-align: center;
+    width: 13.04348%;
+    float: left;
+    margin-right: 1.44928%;
+  }
+  /* line 27, ../sass/_layouts/_l_header.scss */
+  .header__nav .header__menu li a {
+    color: #727275;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  /* line 32, ../sass/_layouts/_l_header.scss */
+  .header__nav .header__menu li.logo {
+    width: 13.04348%;
+    float: left;
+    margin-right: 1.44928%;
+  }
+  /* line 35, ../sass/_layouts/_l_header.scss */
+  .header__nav .header__menu li:last-child {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 31, ../sass/_layouts/_default.scss */
+.page__inner .page__content {
+  min-height: 100px;
+}
+/* line 35, ../sass/_layouts/_default.scss */
+.page__inner .page__left {
+  /*temp*/
+  min-height: 100px;
+  background: red;
+  width: 31.03448%;
+  float: left;
+  margin-right: 3.44828%;
+}
+@media (min-width: 1005px) {
+  /* line 35, ../sass/_layouts/_default.scss */
+  .page__inner .page__left {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+/* line 45, ../sass/_layouts/_default.scss */
+.page__inner .page__right {
+  /*temp*/
+  min-height: 100px;
+  background: red;
+  width: 65.51724%;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 1005px) {
+  /* line 45, ../sass/_layouts/_default.scss */
+  .page__inner .page__right {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1005px) {
+  /* line 58, ../sass/_layouts/_default.scss */
+  .page__inner.centered .page__content {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 16.94915%;
+  }
+}

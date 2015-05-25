@@ -1,0 +1,22 @@
+// Requirements
+// ============
+@import "susy";
+
+$susy: (
+        columns: $total-columns,
+        gutter: $gutter-width,
+        global-box-sizing: border-box,
+        debug: (
+                image: show-columns,
+                output: background,
+                toggle: bottom left
+        )
+);
+
+$susy_desktop: (
+        columns: 12,
+        /*gutters: 1/4,*/
+        container: rem-calc(1005),
+);
+
+@include border-box-sizing;

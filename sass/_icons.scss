@@ -1,0 +1,18 @@
+.iconbox{
+  display: inline-block;
+  width: rem-calc(38);
+  height: rem-calc(38);
+  font-size: rem-calc(22);
+  text-align: center;
+  line-height: rem-calc(40);
+  color: $color-orange;
+  &.black{
+    background: rgba(#000,0.6);
+    
+  }
+}
+
+[class^="icons-"]::before, [class*=" icons-"]::before {
+  line-height: 0;
+  vertical-align: baseline;
+}

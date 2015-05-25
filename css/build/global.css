@@ -1,0 +1,67 @@
+ /*
+Error: File to import not found or unreadable: normalize.
+       Load path: D:/DEVELOPMENT/SERVER/Ampps/www/socialize-github
+        on line 1 of sass/_settings.scss
+        from line 3 of sass/style.scss
+
+1: // Screen
+2: // ======
+3: @import "settings";
+4: 
+5: html{
+6:   font-size: 85%;
+
+Backtrace:
+sass/_settings.scss:1
+sass/style.scss:3
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/import_node.rb:66:in `rescue in import'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/import_node.rb:45:in `import'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/import_node.rb:28:in `imported_file'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/import_node.rb:37:in `css_import?'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `map'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:88:in `block in with_import'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:88:in `with_import'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:407:in `run'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/base.rb:52:in `parse'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/base.rb:19:in `parse!'
+D:/DEVELOPMENT/TOOLS/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/bin/sass:13:in `<top (required)>'
+D:/DEVELOPMENT/TOOLS/Ruby193/bin/sass:23:in `load'
+D:/DEVELOPMENT/TOOLS/Ruby193/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: normalize.\A        Load path: D:/DEVELOPMENT/SERVER/Ampps/www/socialize-github\A         on line 1 of sass/_settings.scss\A         from line 3 of sass/style.scss\A \A 1: // Screen\A 2: // ======\A 3: @import \"settings\";\A 4: \A 5: html{\A 6:   font-size: 85%;"; }

@@ -1,0 +1,27 @@
+.team-list{
+  .image{
+    border-radius: 80%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 80%;
+    position: relative;
+    width: 80%;
+  }
+  #flag{
+    fill: $color-orange;
+  }
+  #text{
+    font-size:9px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  fill: currentColor;
+}
